@@ -5,27 +5,15 @@ description = "Telegram bot for expense tracking"
 requires-python = ">=3.11"
 
 dependencies = [
-    # Telegram
     "aiogram>=3.15",
-    
-    # Database
     "sqlalchemy[asyncio]>=2.0",
     "aiosqlite>=0.20",
     "alembic>=1.14",
-    
-    # Config
     "pydantic-settings>=2.7",
-    
-    # AI
     "anthropic>=0.42",
-    
-    # Excel
+    "mistralai>=1.0.0",
     "openpyxl>=3.1",
-    
-    # Scheduler
-    "apscheduler>=3.11",
-    
-    # HTTP client (exchange rates)
+    "apscheduler>=3.10",
     "aiohttp>=3.11",
 ]
 
