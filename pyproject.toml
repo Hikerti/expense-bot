@@ -1,0 +1,48 @@
+[project]
+name = "expense-bot"
+version = "0.1.0"
+description = "Telegram bot for expense tracking"
+requires-python = ">=3.11"
+
+dependencies = [
+    # Telegram
+    "aiogram>=3.15",
+    
+    # Database
+    "sqlalchemy[asyncio]>=2.0",
+    "aiosqlite>=0.20",
+    "alembic>=1.14",
+    
+    # Config
+    "pydantic-settings>=2.7",
+    
+    # AI
+    "anthropic>=0.42",
+    
+    # Excel
+    "openpyxl>=3.1",
+    
+    # Scheduler
+    "apscheduler>=3.11",
+    
+    # HTTP client (exchange rates)
+    "aiohttp>=3.11",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.8",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
