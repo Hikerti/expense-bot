@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.ruff_cache/
+.env
+data/expense.db
+data/backups/
+data/attachments/
+tests/
+debug_nlu.py
+test_network.py
+*.md

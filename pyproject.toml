@@ -11,11 +11,11 @@ dependencies = [
     "alembic>=1.14",
     "pydantic-settings>=2.7",
     "anthropic>=0.42",
-    "mistralai>=1.0.0",
+    "mistralai>=2.2.0",
     "openpyxl>=3.1",
     "apscheduler>=3.10",
     "aiohttp>=3.11",
-    "aiohttp-socks>=0.10.1",
+    "aiohttp-socks>=0.10",
 ]
 
 [project.optional-dependencies]
