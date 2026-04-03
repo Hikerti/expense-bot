@@ -28,6 +28,10 @@ class Settings(BaseSettings):
     # Timezone
     timezone: str = "Asia/Dubai"
 
+    # Proxy
+    http_proxy: str = ""
+    https_proxy: str = ""
+
     @property
     def db_url(self) -> str:
         return f"sqlite+aiosqlite:///{self.db_path}"
